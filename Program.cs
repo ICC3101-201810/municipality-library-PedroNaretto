@@ -63,10 +63,10 @@ namespace Lab_10___Pedro_Naretto
             Console.ReadKey();
 
 
-            Console.WriteLine("Bienvenido a la municipalidad\nQue decea inscribir?\n1)Persona\n2)Propiedad\n3)Automovil\n4)Salir");
-            string resultado = Console.ReadLine();
             while (true)
             {
+                Console.WriteLine("Bienvenido a la municipalidad\nQue decea inscribir?\n1)Persona\n2)Propiedad\n3)Automovil\n4)Salir");
+                string resultado = Console.ReadLine();
                 while (resultado != "1" & resultado != "2" & resultado != "3" & resultado != "4")
                 {
                     Console.WriteLine("Comando invalido\nQue decea inscribir?\n1)Persona\n2)Propiedad\n3)Automovil\n4)Salir");
@@ -90,7 +90,10 @@ namespace Lab_10___Pedro_Naretto
                     DateTime nacimiento = new DateTime(año, mes, dia);
                     Console.WriteLine("Ingrese Rut:");
                     string rut = Console.ReadLine();
+
                     ClassLibrary1.Person p = new ClassLibrary1.Person(nombre, apellido, nacimiento, null, rut, null, null);
+
+
                 }
 
                 if (resultado == "2")
